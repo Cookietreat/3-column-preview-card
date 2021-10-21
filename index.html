@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@200&display=swap" rel="stylesheet">
+  <title> 3-column preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    
+      .container{
+        
+       
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(230, 230, 233);
+       
+      }
+     .floatingDiv1{
+       width: 200px;
+       height: 500px;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+       padding-left: 50px;
+       padding-right: 30px;
+       /*background-color: Bright rgb(240, 173, 50);*/
+       float: left;
+       position: relative;
+       top: 90px;
+       left: 200px;
+     }
+     .floatingDiv2{
+       width: 200px;
+       height: 500px;
+       
+       padding-left: 50px;
+       padding-right: 30px;
+       /*background-color: Dark rgb(12, 182, 182);*/
+       float : left;
+       position: relative;
+       top: 90px;
+       left: 200px;
+
+     }
+     .floatingDiv3{
+       width: 200px;
+       height: 500px;
+       border-top-right-radius: 8px;
+       border-bottom-right-radius: 8px;
+       padding-left: 50px;
+       padding-right: 30px;
+       /*background-color: Very dark rgb(19, 109, 109);*/
+       float: left;
+       position: relative;
+       top: 90px;
+       left: 200px;
+     }
+     .learnMore{
+       position: absolute;
+      font-size: 15px;
+      font-weight: 300;
+      font-family: 'Lexend Deca', sans-serif;
+      background-color: white;
+     
+      padding: 15px 32px;
+      margin: 4px 2px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 24px;
+      border: 1px solid white;
+      top: 400px;  
+     }
+
+     .learnMore:hover{
+       transition: 0.4s;
+       cursor: pointer;
+       background-color: transparent;
+       color: white !important;
+       font-weight: 300;
+      
+     }
+     
+
+     .pic{
+       margin-left: auto;
+       padding: 5px;
+       position: relative;
+       top: 35px;
+     }
+
+     h2{
+       color: white;
+       position: relative;
+       top: 20px;
+       font-family: 'Big Shoulders Display', cursive;
+       font-size: 45px;
+     }
+     
+     p{
+       color: white;
+       font-family: 'Lexend Deca', sans-serif;
+      font-size: 13px;
+      word-spacing: 6px;
+      line-height: 1.6;
+      position: relative;
+      top: 30px;
+     }
+     .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+  <div class= "floatingDiv1" style="background-color:rgb(252, 164, 2);" >
+    <img src="images/icon-sedans.svg" alt="sedans" class="pic">
+    <h2>SEDANS</h2>
+    <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+      or on your next road trip.</p>
+
+      <button class="learnMore" style="color: orange;"> Learn More</button>
+
+  </div>
+  <div class= "floatingDiv2" style="background-color: teal;" >
+    <img src="images/icon-suvs.svg" alt="suvs" class="pic">
+    <h2>SUVS</h2>
+    <p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+      and off-road adventures.</p>
+
+      <button class="learnMore" style="color: teal;"> Learn More</button>
+
+  </div>
+  <div class= "floatingDiv3" style="background-color: rgb(7, 78, 78);">
+    <img src="images/icon-luxury.svg" alt="luxury" class="pic">
+    <h2>LUXURY</h2>
+    <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+      rental and arrive in style.</p>
+      <button class="learnMore" style="color: rgb(4, 112, 112);"> Learn More</button>
+  </div>
+</div>
+  
+
+    
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Angie</a>.
+  </div>
+</body>
+</html>
